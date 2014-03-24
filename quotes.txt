@@ -1,0 +1,171 @@
+
+"When stopping a terrorist attack or seeking to recover a kidnapped child, encountering encryption may mean the difference between success and catastrophic failures"
+-- Janet Reno, Sept 99. Or in plain English "When trying to commit economic espionage and illegaly spying on our citizens, encountering encryption...."
+
+
+"In coming months, politicians will flail about looking for freedoms to eliminate to 'curb the terrorist threat'. We must remember throughout that you cannot preserve freedom by eliminating it."
+-- Metzger, Wasabi Systems, Sept 01.
+
+"What makes you think you can invent a good cipher if y ou have no expertise in the subject? Maybe you can, but it's not terribly likely. Imagine how you would react if your doctor told you "You have appendicitis, a disease that is life-threatening if not treated. We have a time-tested cure that cures 99% of all patients with no noticeable side-effects, but I'm not going to give you that: I'm going to give you a new experimental treatment my cousin dreamed up last week. No, my cousin has no medical training. No, I have no evidence that the new treatment will work, and it's never been tested or analyzed in depth -- but I'm going to give it to you anyway because my cousin thinks it is good stuff." You'd find another doctor, I hope. Rational people leave medical care to the medical experts. The medical experts have a much better track record than the quacks."
+-- David Wagner PhD, sci.crypt, 19th Oct 02.
+
+
+
+"This is by-design behavior, not a security vulnerability. "
+-- Scott Culp, Microsoft Security Response Center, discussing the hole allowing ILOVEU to propogate, 5/5/00.
+
+"Cryptography is like literacy in the Dark Ages. Infini tely potent, for good and ill... yet basically an intellectual construct, an idea, which by its nature will resist efforts to restrict it to bureaucrats and others who deem only themselves worthy of such Privilege."
+-- "A Thinking Man's Creed for Crypto", Vin McLellan.
+
+
+
+"Microsoft is a bad neighbour, whose allowed their yard to fill with filth and trash, subjecting the people around them to the vermin and roaches that breed within their unkempt property. It is on this day that the internet will begin to sputter and fail in places due to the tremendous burdon Microsofts incompetence has placed upon it. Microsoft's products spew pollution into the information space like a burning mountain of tires."
+-- Unknown
+"You have zero privacy anyway, get over it."
+-- Chief executive officer of Sun Microsystems Scott McNealy to reporters and analysts, 25/1/99
+
+
+"The price of freedom is eternal vigilence."
+-- Thomas Jefferson.
+
+
+"most security failures in its area of interest are due to failures in implementation, not failure in algorithms or protocols"
+-- The NSA
+
+
+
+"Within Europe, all email, telephone, and fax communica tions are routinely intercepted by the United States National Security Agency"
+-- European Parliament report "Assessing the Technologies of Political Control"< /font>
+
+"The end of the Cold War has not brought to an end the Echelon eavesdropping system. This system has become a weapon of economic warfar e."
+-- Rossiyskaya Gazeta (Russian state-funded daily paper)
+
+"I worry about my child and the Internet all the time, even though she's too young to have logged on yet. Here's what I worry about. I worry that 10 or 15 years from now, she will come to me and say 'Daddy, where we re you when they took freedom of the press away from the Internet?'"
+-- Mike Godwin, Electronic Frontier Foundation.
+
+"If McDonalds offered a free Big Mac in exchange for a DNA sample, there'd be lines around the block"
+-- Bruce Schneier
+
+
+"If the target didn't think he or she was communicating privately, they wouldn't communicate, the key to this business is actually doin g what your adversary believed to be impossible."
+-- General Mike Hayden, Director of the NSA in an CBS Interview.
+
+
+"No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honou r and reputation. Everyone has the right to the protection of the law against su ch interference or attacks."
+-- Article 12 Universal Declaration of Human Rights
+
+
+"The real aim of current policy is to ensure the contin ued effectiveness of US information warfare assets against individuals, business es and governments in Europe and elsewhere"
+-- Ross Anderson, posting to ukcrypto, 4th Dec 1998
+
+(BS) "You cannot trust an encryption algorithm designed by someone who had not 'earned their bones' by first spending a lot of time cra cking codes."
+(PRZ) "...Practically no one in the commercial world of cryptography qualified u nder this criterion!"
+(BS) "Yes, and that makes our job at the NSA so much easier"
+-- Coversation between Philip Zimmermann and Brian Snow, a senior cryptographer with the NSA.
+
+
+"Even the Four Horsemen of Kidporn, Dope Dealers, Mafia and Terrorists don't worry me as much as totalitarian governments. It's been a long century, and we've had enough of them."
+-- Bruce Sterling
+
+"I'd rather have him inside the tent pissing out than o utside the tent pissing in"
+-- Lyndon B Johnson on why he retained J. Edgar Hoover at the FBI, Guardian Week ly, 18 Dec 1971.
+
+
+
+"The right of the people to be secure in their persons, houses, papers and effects, against unreasonable searches and seizures, shall n ot be violated..."
+-- The Fourth Amendment to the U.S. Constitution
+
+
+"Legality? That particular aspect didn't enter into the discussions."
+-- Benson K Buffham, Deputy Director NSA when questioned by the Senate Church Co mmittee about domestic monitoring
+
+"In some countries, strong encryption has been banned o r the keys have to be escrowed for government officials. With invisibility readi ly available to anyone with moderate programming skills, it is obvious that any such measures are ineffective. Restrictions on encryption cannot stop criminals from using, but may hurt law-abiding businesses and individuals who could greatl y benefit from mass application of cryptographic techniques."
+-- Counterintelligence News and Developments, National Counterintelligence Cente r, Volume 2 - June 1998
+
+
+"Any time that you're developing a new product, you wil l be working closely with the NSA"
+-- Ira Rubenstein, Microsoft attorney
+
+
+"NSA systematically intercepts international communicat ions, both voice and cable."
+-- General Allen, Director of the NSA testifying before Congress
+
+
+"The law does not allow me to testify on any aspect of the National Security Agency, even to the Senate Intelligence Committee."
+-- General Allen, Director of the NSA, 1975
+
+
+"There can be no greater good than the quest for peace, and no finer purpose than the preservation of freedom."
+-- U.S. President Ronald Reagan
+
+
+"Nearly all men can stand adversity, but if you want to test a man's character, give him power."
+-- Abraham Lincoln
+
+"If all the personal computers in the world - ~260 mill ion computers - were put to work on a single PGP-encrypted message, it would sti ll take an estimated 12 million times the age of the universe, on average, to br eak a single message."
+-- William Crowell, Deputy Director of the National Security Agency, March 1997
+
+
+"Without censorship, things can get terribly confused in the public mind."
+-- U.S. General William Westmoreland
+
+
+"It is insufficient to protect ourselves with laws; we need to protect ourselves with mathematics."
+-- Bruce Schneier
+
+
+"The obvious mathematical breakthrough would be development of an easy way to factor large prime numbers."
+-- Bill Gates from The Road Ahead, p265
+
+
+"You shouldn't overestimate the I.Q. of crooks."
+-- NYT: Stuart A. Baker, General Counsel for the NSA, explained why crooks and t errorists who are smart enough to use data encryption would be stupid enough to choose the U.S. Government's compromised data encryption standard.
+
+"If the personal freedoms guaranteed by the Constitutio n inhibit the government's ability to govern the people, we should look to limit those guarantees."
+-- President Bill Clinton, August 12, 1993
+
+"Why should you care if you have nothing to hide?"< BR> -- J. Edgar Hoover
+
+
+"Deception is a state of mind - and the mind of the state"
+-- James Angleton, the late CIA superspy, quoted in the book, DECEPTION by Edwar d Jay Jones (1989)
+
+
+"The best system is to use a simple, well understood al gorithm which relies on the security of a key rather than the algorithm itself. This means if anybody steals a key, you could just roll another and they have to start all over."
+-- Andrew Carol. Amen!
+
+"Random numbers should not be generated with a method chosen at random."
+-- Donald Knuth, The Art of Computer Programming Volume 2 - Seminumerical Algort hms
+
+
+"50 million potential S/Mime users can't be wrong.... B ut they can all be stupid!"
+-- Sam Simpson, 4th December 98
+
+
+
+"When the President does it, that means that it's not illegal."
+-- Richard M. Nixon in an interview with David Frost, 19th May, 1977
+
+
+"Civilization is the progress toward a society of priva cy. The savage's whole existence is public, ruled by the laws of his tribe. Civ ilization is the process of setting man free from men"
+-- Ayn Rand, The Fountainhead (1943)
+
+
+"Individual rights are not subject to a public vote; a majority has no right to vote away the rights of a minority; the political funct ion of rights is precisely to protect minorities from oppression by majorities ( and the smallest minority on earth is the individual)"
+--Ayn Rand
+
+"Necessity is the plea for every infringement of human freedom. It is the argument of tyrants; it is the creed of slaves."
+-- William Pitt, British Prime Minister, November 18, 1783
+
+
+"The greatest trick the devil ever played was convincin g everyone he didn't exist"
+-- Verbal Kint. (Written about the NSA?)
+
+
+"I think there's a world market for about five computer s."
+-- Watson, Thomas (Founder of IBM)
+
+
+
+"Terrorism: deadly violence against humans and other li ving things, usually conducted by government against its own people."
+-- Edward Abbey
