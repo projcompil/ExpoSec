@@ -112,7 +112,7 @@ Permissions pour un fichiers :
 
 ## Scénario 3 : stockage de mots de passe
 
-## Solution : le hashage, explication technique
+## Solution : le hachage, explication technique
 
 # III. Logiciels malicieux
 
