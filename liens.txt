@@ -1,0 +1,5 @@
+
+Stockage sécurisé de mots de passe :
+https://security.stackexchange.com/questions/211/how-to-securely-hash-passwords
+
+
