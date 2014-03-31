@@ -1,10 +1,22 @@
 % Sécurité des systèmes informatiques
-% Nissim Zerbib, Alex Auvolat
-% 2014-04-04
+% Alex Auvolat, Nissim Zerbib
+% 4 avril 2014
 
 ## Introduction
 
-Bla bla bla
+
+La sécurité est une chaîne : elle est aussi solide que le plus faible de ses maillons.
+
+Facteurs les plus souvent en cause :
+
+  - erreur humaine
+  - faille dans l'implémentation
+
+Intérêts nationaux et économiques majeurs mis en cause :
+  
+  - certaines administrations et certains dirigeants des principales puissances mondiales sont encore vulnérables !
+  - vol d'informations et de technologies
+  - cybercriminalité et surveillance des populations
 
 # I. Failles de sécurité et exploitation
 
@@ -71,6 +83,19 @@ Permissions pour un fichiers :
 
 # II. Cryptographie
 
+## Objectifs de la cryptographie
+
+  - Confidentialité : le message reste secret
+  - Authentification : le message vient bien de la bonne entité
+  - Intégrité : le message n'a pas été modifé
+  - Anonymat : on ne peut trouver de qui vient le message
+
+## Cryptographie symétrique
+
+  - Primitif : César, Vigenère
+  - Standards : DES, AES et autres
+  - Modes de chiffrement
+
 ## Scénario 1 : envoi de mail chiffré
 
 \center\includegraphics[width=10cm]{aliceBob.jpg}
@@ -88,6 +113,15 @@ Permissions pour un fichiers :
 ## Scénario 3 : stockage de mots de passe
 
 ## Solution : le hashage, explication technique
+
+# III. Logiciels malicieux
+
+## Les virus
+
+  - Un virus est un programme auto-reproducteur.
+  - Souvent équipé d'une charge finale : le virus est le vecteur de l'attaque.
+
+## Autres malwares
 
 ## Conclusion
 
