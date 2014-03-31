@@ -18,6 +18,11 @@ Intérêts nationaux et économiques majeurs mis en cause :
   - vol d'informations et de technologies
   - cybercriminalité et surveillance des populations
 
+
+## Trouvver le bon équilibre
+
+Il faut adapter la sécurité de son infrastructure à l'ampleur de la menace et à la chaîne entière. Inutile de chiffrer tout si les utilisateurs sont imprudents.
+
 # I. Failles de sécurité et exploitation
 
 ## La sécurité sous Unix
@@ -81,14 +86,20 @@ Permissions pour un fichiers :
 
 ## Exploitation de failles humaines : l'ingéniérie sociale
 
+## Failles matérielles
+
+Tempest
+
+Composants électroniques
+
 # II. Cryptographie
 
 ## Objectifs de la cryptographie
 
-  - Confidentialité : le message reste secret
-  - Authentification : le message vient bien de la bonne entité
-  - Intégrité : le message n'a pas été modifé
-  - Anonymat : on ne peut trouver de qui vient le message
+> - Confidentialité : le message reste secret
+> - Authentification : le message vient bien de la bonne entité
+> - Intégrité : le message n'a pas été modifé
+> -  Anonymat : on ne peut trouver de qui vient le message
 
 ## Cryptographie symétrique
 
@@ -104,6 +115,16 @@ Permissions pour un fichiers :
 
 \center\includegraphics[width=10cm]{asymmetric.png}
 
+## Fonctionnement : chiffrage
+
+\center\includegraphics[width=10cm]{cryptagePGP.png}
+
+
+## Fonctionnement : déchiffrage
+
+
+\center\includegraphics[width=10cm]{decryptPGP.png}
+
 ## Scénario 2 : communication sécurisée
 
 ## Solution : SSL, explication technique
@@ -113,6 +134,11 @@ Permissions pour un fichiers :
 ## Scénario 3 : stockage de mots de passe
 
 ## Solution : le hachage, explication technique
+
+
+## Scénario 4 : anonymiser ses actions sur Internet
+
+L'exemple de Tor :
 
 # III. Logiciels malicieux
 
