@@ -73,11 +73,17 @@ Permissions pour un fichiers :
 
 ## Scénario 1 : envoi de mail chiffré
 
+\center\includegraphics[width=10cm]{aliceBob.jpg}
+
 ## Solution : GPG, explication technique
+
+\center\includegraphics[width=10cm]{asymmetric.png}
 
 ## Scénario 2 : communication sécurisée
 
 ## Solution : SSL, explication technique
+
+\center\includegraphics[width=9cm]{diffie1.jpg}
 
 ## Scénario 3 : stockage de mots de passe
 
@@ -85,7 +91,7 @@ Permissions pour un fichiers :
 
 ## Conclusion
 
-On n'est jamais à l'abri...
+\center{On n'est jamais à l'abri...}
 
 
 
