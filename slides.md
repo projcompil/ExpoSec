@@ -19,7 +19,7 @@ Intérêts nationaux et économiques majeurs mis en cause :
   - cybercriminalité et surveillance des populations
 
 
-## Trouvver le bon équilibre
+## Trouver le bon équilibre
 
 Il faut adapter la sécurité de son infrastructure à l'ampleur de la menace et à la chaîne entière. Inutile de chiffrer tout si les utilisateurs sont imprudents.
 

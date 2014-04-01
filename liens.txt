@@ -2,4 +2,10 @@
 Stockage sécurisé de mots de passe :
 https://security.stackexchange.com/questions/211/how-to-securely-hash-passwords
 
+Sortir d'un chroot :
+http://www.bpfh.net/simes/computing/chroot-break.html
+
+Exploitation d'un Stack Overflow :
+http://www.skullsecurity.org/wiki/index.php/Example_4
+
 
