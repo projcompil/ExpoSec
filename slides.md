@@ -18,8 +18,16 @@ Intérêts nationaux et économiques majeurs mis en cause :
   - vol d'informations et de technologies
   - cybercriminalité et surveillance des populations
 
+Bien sûr les illustrations ne sont pas de nous.
 
-## Trouvver le bon équilibre
+## Niveau de conscience de l'utilisateur lambda quant à l'importance de ces questions
+
+- Une majorité de gens utilise des systèmes peu sécurisés.
+- Les mots de passe les plus utilisés actuellement : 123456, password, motdepasse, qwerty, azerty etc.
+- Certains chefs d'état et de services de renseignements, de polices manquent d'une formation basique à la cryptographie. Entre la corbeille non vidée de l'affaire Clear Stream, les agendas papiers de gens qui touchent 500000 euros de prime d'indic en liquide, ou un certain Paul Bismuth qui pense échapper à des écoutes en changeant de portable, il y a encore fort à faire pour éveiller les esprits.
+- Pendant ce temps, les services secrets de divers pays écoutent toutes les communications mondiales, de nombreux cyber-attaquants sont aux aguets.
+
+## Trouver le bon équilibre
 
 Il faut adapter la sécurité de son infrastructure à l'ampleur de la menace et à la chaîne entière. Inutile de tout chiffrer si les utilisateurs sont totalement imprudents.
 
@@ -89,12 +97,20 @@ Illustration avec Wireshark.
 
 ## Introduction de failles dans le code source
 
+
+La plupart des logiciels propriétaires possèdent (probablement) des backdoors : \scriptsize
+<https://www.schneier.com/blog/archives/2013/09/the_nsa_is_brea.html>
+
+
+Mais les logiciels libres ne sont pas non plus à l'abris :
 \scriptsize
 
 <http://www.infoq.com/news/2013/10/Linux-Backdoor?utm_source=tuicool>
 
 
-## Exploitation de failles humaines : l'ingéniérie sociale
+Pour ceux qui voudraient utiliser un maximum de services et logiciels libres, sûrs etc. : \scriptsize <https://prism-break.org/fr/>
+
+## Exploitation de failles humaines : l'ingénierie sociale
 
 Mêmes les infrastructures les mieux protégées ne sont pas à l'abri :
 
@@ -105,6 +121,8 @@ Mêmes les infrastructures les mieux protégées ne sont pas à l'abri :
 ## Failles et fuites matérielles
 
 Tempest
+
+Article Shamir : Unsafe and sound
 
 Composants électroniques
 
@@ -118,15 +136,24 @@ Composants électroniques
 > -  Anonymat : on ne peut trouver de qui vient le message
 
 
+
+##
+
+\center\includegraphics[width=9cm]{cryptoduck.jpg}
+
+##
+
+\center\includegraphics[width=9cm]{nobear.jpg}
+
+
 ## Fondamentaux
 
-On n'invente pas son propre algorithme de cryptographie (à moins d'être cryptologue) ! Il est probable qu'il soit vulnérable.
+  - On n'invente pas son propre algorithme de cryptographie (à moins d'être cryptologue) ! Il est probable qu'il soit vulnérable.
 Cela vaut aussi pour les protocoles, implémentations, etc...
 
-Principe numéro 2 de Kerchoffs : Il [le cryptosystème] faut qu’il n’exige pas le secret, et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi ;
+  - Principe numéro 2 de Kerchoffs : Il [le cryptosystème] faut qu’il n’exige pas le secret, et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi.
 
 Le seul secret doit être un paramètre de l'algorithme : la clé.
-
 
 ## Cryptographie symétrique
 
@@ -137,11 +164,15 @@ Le nombre de clés disponibles doit être grand pour empêcher une recherche exh
   - Standards : DES, AES et autres
   - Modes de chiffrement
 
-## Scénario 1 : envoi de mail chiffré
+
+## Scénario 1 : envoi de mail chiffré et cryptographie asymétrique
+
+Comment échanger la clé ?
 
 \center\includegraphics[width=10cm]{aliceBob.jpg}
 
-## Solution : GPG, explication technique
+
+## Solution : cryptographie asyymétrique, GPG, explication technique
 
 \center\includegraphics[width=10cm]{asymmetric.png}
 
@@ -155,10 +186,13 @@ Le nombre de clés disponibles doit être grand pour empêcher une recherche exh
 
 \center\includegraphics[width=10cm]{decryptPGP.png}
 
+
+## L'exemple d'EL Gamal
+
+
 ## Scénario 2 : communication sécurisée
 
-Empêcher les attaques de type Man in the Middle :
-
+Empêcher les attaques de type Man in the Middle : comment être sûr qu'on se connecte bien au bon serveur.
 
 ## Solution : SSL, explication technique
 
@@ -170,6 +204,9 @@ Pour les services webs : L'astuce est de ne jamais les stocker !
 
 Faille Adobe : les mots de passe étaient chiffrés et pourtant...
 
+\scriptsize
+
+<http://nakedsecurity.sophos.com/2013/11/04/anatomy-of-a-password-disaster-adobes-giant-sized-cryptographic-blunder/>
 
 ## Solution : le hachage, explication technique
 
