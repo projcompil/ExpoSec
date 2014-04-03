@@ -5,7 +5,12 @@ https://security.stackexchange.com/questions/211/how-to-securely-hash-passwords
 Sortir d'un chroot :
 http://www.bpfh.net/simes/computing/chroot-break.html
 
-Exploitation d'un Stack Overflow :
+Exploitation d'un stack overflow :
 http://www.skullsecurity.org/wiki/index.php/Example_4
+et le Stack Overflow sur le stack overflow :
+https://stackoverflow.com/questions/286090/stack-overflow-exploit-in-c
 
-
+Wiki :
+https://en.wikipedia.org/wiki/Unix_security
+https://en.wikipedia.org/wiki/Chroot
+https://en.wikipedia.org/wiki/Privilege_escalation
