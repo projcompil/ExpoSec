@@ -119,9 +119,46 @@ Ou pire encore :
 
     a';DROP TABLE users; SELECT * FROM groups WHERE 't' = 't
 
+## Les failles du web : les injections SQL
+
+> - Ce genre de failles arrive souvent sur des sites Web codés avec les pieds en PHP (mais pas que !)
+> - Conséquence : on peut voler des informations (typiquement, liste de nom d'utilisateurs/emails/mots de passes),
+  et exécuter n'importe quelle modification sur le serveur.
+> - La solution la plus élémentaire consiste à rajouter les caractères d'échapement qu'il faut au bon endroit,
+  avec une fonction du type `mysql_real_escape_string` (fonction dépréciée de PHP).
+
 ## Les failles du web : les failles XSS
 
+> - XSS : *cross-site scripting*
+> - Vulnérabilité attaquée : Javascript, ou autres possibilités de scripter le client (Flash, Java).
+> - Il est parfois possible d'injecter du code Javascript dans les pages d'un site web mal sécurisé.
+> - Schéma de l'attaque : insérer un code javascript malicieux sur une page que d'autres utilisateurs
+  sont susceptibles de visiter. Ce script peut, par exemple, capturer les cookies de l'utilisateur et
+  les transmettre à l'attaquant, ce qui lui permettera d'usurper l'identité de la victime.
+> - Sécurisation : il faut empêcher l'utilisation de balises `<script>` par les utilisateurs du site,
+  avec un filtrage approprié (on peut vouloir garder d'autres balises HTML par ailleurs).
+
+## Les failles du web : les failles CSRF
+
+> - CSRF : *cross-sit request forgeries*
+> - Idée : on veut effectuer une requête sur un site pour, par exemple, supprimer un message, mais on
+  n'a pas les droits nécessaires pour effectuer l'action. On veut donc faire faire cette action par
+  quelqu'un qui a les droits, à son insu.
+> - Méthode : envoyer à l'administrateur du forum un message privé avec une image dont l'adresse est l'adresse
+  de la page à appeller pour supprimer le message cible. Cette image sera automatiquement chargée par le
+  navigateur, ce qui causera la suppression du message.
+> - Sécurisation : utiliser des *tokens* à usage unique pour toutes les actions sensibles de ce type ; vérifier
+  l'en-tête *referer* ; nécessiter des requêtes POST pour les actions sensibles.
+
 ## Exploitation de failles humaines : l'ingéniérie sociale
+
+> - Exemple classique : le phishing...
+> - Principe : abuser de la crédulité des gens pour obtenir des informations qui nous seraient
+  autrement privées.
+> - Méthode : le plus souvent, se faire passer pour quelqu'un que l'on n'est pas (ex : un administrateur
+  système).
+> - Sécurisation : impossible (il y aura toujours quelqu'un de suffisament abruti pour donner son
+  mot de passe)
 
 ## Failles matérielles
 
