@@ -21,7 +21,7 @@ Intérêts nationaux et économiques majeurs mis en cause :
 
 ## Trouvver le bon équilibre
 
-Il faut adapter la sécurité de son infrastructure à l'ampleur de la menace et à la chaîne entière. Inutile de chiffrer tout si les utilisateurs sont imprudents.
+Il faut adapter la sécurité de son infrastructure à l'ampleur de la menace et à la chaîne entière. Inutile de tout chiffrer si les utilisateurs sont totalement imprudents.
 
 # I. Failles de sécurité et exploitation
 
@@ -80,13 +80,29 @@ Permissions pour un fichiers :
 
 ## Les attaques *Man In The Middle*
 
+Illustration avec Wireshark.
+
 ## Les failles du web : les injections SQL
 
 ## Les failles du web : les failles XSS
 
+
+## Introduction de failles dans le code source
+
+\scriptsize
+
+<http://www.infoq.com/news/2013/10/Linux-Backdoor?utm_source=tuicool>
+
+
 ## Exploitation de failles humaines : l'ingéniérie sociale
 
-## Failles matérielles
+Mêmes les infrastructures les mieux protégées ne sont pas à l'abri :
+
+\scriptsize
+
+<http://www.thesecurityblogger.com/?p=1903>
+
+## Failles et fuites matérielles
 
 Tempest
 
@@ -101,7 +117,21 @@ Composants électroniques
 > - Intégrité : le message n'a pas été modifé
 > -  Anonymat : on ne peut trouver de qui vient le message
 
+
+## Fondamentaux
+
+On n'invente pas son propre algorithme de cryptographie (à moins d'être cryptologue) ! Il est probable qu'il soit vulnérable.
+Cela vaut aussi pour les protocoles, implémentations, etc...
+
+Principe numéro 2 de Kerchoffs : Il [le cryptosystème] faut qu’il n’exige pas le secret, et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi ;
+
+Le seul secret doit être un paramètre de l'algorithme : la clé.
+
+
 ## Cryptographie symétrique
+
+Le principe général : le chiffrement doit cacher les propriétés statistiques du message. Chaque bit du message crypté doit idéalement dépendre de tous les bits du message original.
+Le nombre de clés disponibles doit être grand pour empêcher une recherche exhaustive.
 
   - Primitif : César, Vigenère
   - Standards : DES, AES et autres
@@ -127,29 +157,44 @@ Composants électroniques
 
 ## Scénario 2 : communication sécurisée
 
+Empêcher les attaques de type Man in the Middle :
+
+
 ## Solution : SSL, explication technique
 
 \center\includegraphics[width=9cm]{diffie1.jpg}
 
 ## Scénario 3 : stockage de mots de passe
 
+Pour les services webs : L'astuce est de ne jamais les stocker !
+
+Faille Adobe : les mots de passe étaient chiffrés et pourtant...
+
+
 ## Solution : le hachage, explication technique
 
 
+
+Ajouter du sel pour empêcher l'utilisation efficace de tables précalculées.
+
 ## Scénario 4 : anonymiser ses actions sur Internet
 
-L'exemple de Tor :
+L'exemple de Tor : à partir de primitives cryptographiques de base, on peut réaliser différentes architectures.
+
+\center\includegraphics[width=8.1cm]{tor.jpg}
 
 # III. Logiciels malicieux
 
 ## Les virus
 
   - Un virus est un programme auto-reproducteur.
-  - Souvent équipé d'une charge finale : le virus est le vecteur de l'attaque.
+  - Charge finale : le virus est vecteur de l'attaque.
 
 ## Autres malwares
 
 ## Conclusion
+
+La mise en place et le maintien d'une infrastructure sécurisée repose à la fois sur une expertise (respect à la lettre des standards cryptographiques, utilisation de logiciels reconnus) et sur une bonne connaissance des utilisateurs.
 
 \center{On n'est jamais à l'abri...}
 
