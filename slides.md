@@ -65,28 +65,35 @@ Permissions pour un fichiers :
 > - Inconvénient : un programme qui tourne en tant que `root` dans un environnement chrooté
   peut facilement s'échapper. D'autre part, seul `root` peut appeller l'appel système `chroot`.
   Il faut donc penser à toujours abandonner ses privilèges `root` après avoir fait un `chroot`.
+  \scriptsize <http://www.bpfh.net/simes/computing/chroot-break.html>
 > - D'autres méthodes d'isolement ont été développées : Jails de FreeBSD, virtualisation, ...
 
 ## La faille classique : le *buffer overflow*
 
-- Origine de la faille : erreur de programmation (omission volontaire ou erreur d'inattention)
-- Tous les programmes écrits dans un langage non managé comme C ou C++ sont vulnérables
-- En particulier : le noyau, les services réseau (serveur mail, web, SQL, ...), etc.
-- L'exploitation d'un *buffer overflow* permet d'exécuter du code arbitraire (injection de code)
+> - Origine de la faille : erreur de programmation (omission volontaire ou erreur d'inattention)
+> - Tous les programmes écrits dans un langage non managé comme C ou C++ sont vulnérables
+> - En particulier : le noyau, les services réseau (serveur mail, web, SQL, ...), etc.
+> - L'exploitation d'un *buffer overflow* permet d'exécuter du code arbitraire (injection de code)
 
 ## Le *buffer overflow* en pratique
 
 Désolé, pas de démo (ça marche pas...)
 
+\scriptsize
+
+<http://www.skullsecurity.org/wiki/index.php/Example_4>
+
 ## Stratégies de protection
 
 > - *Addess space layout randomization* : on met la pile et le tas à des adresses aléatoires, pour
-  qu'il soit plus dûr d'y écrire du code qui sera à une position prévisible. Il est donc plus dur
+  qu'il soit plus dur d'y écrire du code qui sera à une position prévisible. Il est donc plus dur
   de déterminer, entre autres, l'adresse à laquelle faire un *jump*.
 > - *Data execution prevention* : on sépare les parties de la mémoire qui sont du code, que l'on met en
   lecture seule, et les parties qui sont des données sur lesquelles on peut ecrire (typiquement, la pile).
   On interdit l'exécution des données (c'est le CPU qui gère ça)
 > - Certification statique des programmes : tout le monde connaît
+
+## Plus sur les *buffer overflow*
 
 ## Attaques sur le réseau : les attaques DoS et DDoS
 
@@ -114,7 +121,7 @@ Désolé, pas de démo (ça marche pas...)
 
 Prenez par exemple la requête SQL suivante :
 
-    statement = "SELECT * FROM users".
+    statement = "SELECT * FROM users ".
 	            "WHERE name ='" + userName + "';"
 
 \pause
@@ -126,8 +133,6 @@ Maintenant, supposons que la variable `userName` soit définie librement par l'u
 Ou pire encore :
 
     a';DROP TABLE users; SELECT * FROM groups WHERE 't' = 't
-
-Illustration avec Wireshark.
 
 ## Les failles du web : les injections SQL
 
@@ -150,7 +155,7 @@ Illustration avec Wireshark.
 
 ## Les failles du web : les failles CSRF
 
-> - CSRF : *cross-sit request forgeries*
+> - CSRF : *cross-site request forgeries*
 > - Idée : on veut effectuer une requête sur un site pour, par exemple, supprimer un message, mais on
   n'a pas les droits nécessaires pour effectuer l'action. On veut donc faire faire cette action par
   quelqu'un qui a les droits, à son insu.
@@ -159,6 +164,10 @@ Illustration avec Wireshark.
   navigateur, ce qui causera la suppression du message.
 > - Sécurisation : utiliser des *tokens* à usage unique pour toutes les actions sensibles de ce type ; vérifier
   l'en-tête *referer* ; nécessiter des requêtes POST pour les actions sensibles.
+
+## Les attaques Man-in-the-Middle
+
+Illustration avec Wireshark.
 
 ## Exploitation de failles humaines : l'ingéniérie sociale
 
@@ -288,6 +297,9 @@ Faille Adobe : les mots de passe étaient chiffrés et pourtant...
 
 
 Ajouter du sel pour empêcher l'utilisation efficace de tables précalculées.
+
+\scriptsize
+<https://security.stackexchange.com/questions/211/how-to-securely-hash-passwords>
 
 ## Scénario 4 : anonymiser ses actions sur Internet
 
