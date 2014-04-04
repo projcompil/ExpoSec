@@ -273,6 +273,8 @@ Comment échanger la clé ?
 
 ## L'exemple d'EL Gamal
 
+  - Repose sur le logarithme discret.
+  - Proche de Diffie-Hellman, mais une des parties conserve un des paramètres.
 
 ## Scénario 2 : communication sécurisée
 
@@ -294,9 +296,9 @@ Faille Adobe : les mots de passe étaient chiffrés et pourtant...
 
 ## Solution : le hachage, explication technique
 
+  - Utiliser des algorithmes à jour : attaques connu sur SHA-1
 
-
-Ajouter du sel pour empêcher l'utilisation efficace de tables précalculées.
+  - Ajouter du sel pour empêcher l'utilisation efficace de tables précalculées.
 
 \scriptsize
 <https://security.stackexchange.com/questions/211/how-to-securely-hash-passwords>
@@ -313,6 +315,7 @@ L'exemple de Tor : à partir de primitives cryptographiques de base, on peut ré
 
   - Un virus est un programme auto-reproducteur.
   - Charge finale : le virus est vecteur de l'attaque.
+  - Polymorphisme : résister à la détection. Dissimuler son code et son comportement.
 
 ## Autres malwares
 
