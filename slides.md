@@ -223,11 +223,11 @@ Composants électroniques
 
 ##
 
-% \center\includegraphics[width=9cm]{cryptoduck.jpg}
+% \center\includegraphics[width=7cm]{cryptoduck.jpg}
 
 ##
 
-% \center\includegraphics[width=9cm]{nobear.jpg}
+% \center\includegraphics[width=7cm]{nobear.jpg}
 
 
 ## Fondamentaux
